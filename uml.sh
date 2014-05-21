@@ -10,5 +10,6 @@ trap 'kill $(jobs -p)' SIGINT SIGTERM EXIT
 docker -d &
 sleep 1
 
+sudo docker pull ubuntu
 # Use docker
 docker run ubuntu /bin/echo hello world
