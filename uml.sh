@@ -8,7 +8,7 @@ trap 'kill $(jobs -p)' SIGINT SIGTERM EXIT
 
 # Start docker daemon
 docker -d &
-sleep 1
+sleep 2
 
 # Use docker
 docker pull ubuntu
